@@ -3,15 +3,14 @@ body *{
 }
 
 :root{
-    --backwallperColor: #f6f7f9; 
-    --backmenuColor: #333;
-    --highlightColor: #ffbf00;    
-    --textColor: #051e34;
-    --lightColor: #f6f7f9;
-    --projectBrdColor: #545b6261; 
-    --projectItemBack: #f6f7f9cf;
-    --formBtnBack: rgb(5 30 52 / 60%);
-    --pensShadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 1px 3px 1px;
+    --backwallperColor: #f6f5fb; 
+    --backmenuColor: #181a20fd;
+    --highlightColor: #5468ff;
+    --textColor: #181a20;
+    --lightColor: #f6f5fb;
+    --projectItemBack: #f6f5fbcf;
+    --formBtnBack: #181a2099;
+    --pensShadow: #5468ff4d 0px 1px 2px 0px, #5468ff26 0px 1px 3px 1px;
     --footerPolygon: polygon(0% 0%, 0% 100%, 100% 100%);
 }
 
@@ -40,7 +39,8 @@ h2{
     align-items: center;
     padding-left: 4.0rem;
     padding-block: 0.5rem;
-    path{ stroke: var(--backwallperColor); }
+    // path{ stroke: var(--backwallperColor); }
+    path{ stroke: var(highlightColor); }
 }
 
 #skills, #projects:not(.projects-page), #certificates, #pens, #feedback{ 
@@ -48,9 +48,12 @@ h2{
     &>h2{ 
         font-size: calc(1.3rem + 0.65vw);
         svg {
-            background-color: var(--backmenuColor);
-            color: var(--backwallperColor);
-            stroke: var(--backwallperColor);
+            // background-color: var(--backmenuColor);
+            // color: var(--backwallperColor);
+            // stroke: var(--backwallperColor);
+            background-color: #f6f7f9 !important;
+            color: var(--highlightColor);
+            stroke: var(--highlightColor);
             height: 100%;
             position: absolute;
             left: 0;
@@ -58,6 +61,7 @@ h2{
             border-radius: 0.5rem 0rem 0rem 0.5rem;
             padding: 0.5rem 0.0rem;
             width: 3.5rem;    
+            border: 2px solid var(--highlightColor);
         }
     }
     h2:first-of-type{ opacity: 0; }

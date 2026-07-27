@@ -27,6 +27,16 @@ import PRCard from '../Assets/images/projects/ReactMyCard.png';
 import PRAAST1 from '../Assets/images/projects/ReactAASTV1.png';
 import PRAAST2 from '../Assets/images/projects/ReactAASTV2.png';
 import PRTadarab from '../Assets/images/projects/ReactTadarab.png';
+import PRTodo from '../Assets/images/projects/ReactTodo.png';
+import VueTodoApp from '../Assets/images/projects/VueTodoApp.png';
+import VueAZTechDashboard from '../Assets/images/projects/VueAZTechDashboard.png';
+
+import WebMasters from '../Assets/images/projects/WebMasters.jpg';
+import NextAgency from '../Assets/images/projects/NextAgency.jpg';
+import NextPortfolioCard from '../Assets/images/projects/NextPortfolioCard.png';
+import NextImagesGallery from '../Assets/images/projects/NextImagesGallery.png';
+import NextAbdoStoreDashboard from '../Assets/images/projects/NextAbdoStoreDashboard.png';
+
 
 export const projectsData = [
     {
@@ -57,7 +67,8 @@ export const projectsData = [
         PrjPreview: "https://ahmedzkaria22.github.io/EliteCrop/EliteCrop.html",
         PrjGithub: "https://github.com/AhmedZkaria22/EliteCrop"
     },
-    {
+    // Wordpress projects disabled untill connect with new host
+    /*{
         PrjTitle: "Wordpress Portfolio",
         PrjImg: PWpPort,
         PrjTechs: ['Responsive', 'Wordpress'],
@@ -98,7 +109,7 @@ export const projectsData = [
         PrjImg: PWpRlRst,
         PrjTechs: ['Responsive', 'Wordpress'],
         PrjPreview: "https://90dayschallenges.com/ahmedzakaria/royal-restaurant/",
-    },
+    },*/
     {
         PrjTitle: "Personal Theme",
         PrjImg: PPersonal,
@@ -217,21 +228,91 @@ export const projectsData = [
         PrjGithub: "https://github.com/AhmedZkaria22/AAST-Task-V2"
     },
     {
-        PrjTitle: "Tadarab Task",
+        PrjTitle: "freelance - tadarab single course page",
         PrjImg: PRTadarab,
-        PrjTechs: ['Css', 'Scss', 'Responsive', 'React', 'Jsx', 'Matrial ui', 'Matrial ui icons', 'TypeScript', 'NextJs SSR', 'React Slick'],
-        PrjPreview: "https://tadarab-task.vercel.app/",
-    }
+        PrjTechs: ['Css', 'Scss', 'Responsive', 'React', 'Jsx', 'Material UI', 'Material UI icons', 'TypeScript', 'NextJs', 'NextJs SSR', 'React Slick'],
+        // PrjPreview: "https://tadarab-task.vercel.app/",
+        PrjPreview: "https://tadarab-front-task.web.app/",
+    },
+    {
+        PrjTitle: "AZ Todos",
+        PrjImg: PRTodo,
+        PrjTechs: ['Css', 'Scss', 'Responsive', 'React', 'Jsx', 'Route', 'Redux', 'TypeScript', 'Firebase', 'Redux-Firebase', 'Validation', 'Versioning'],
+        PrjPreview: "https://todoapp-22e95-v1.web.app/",
+    },
+    {
+        PrjTitle: "Web Masters App",
+        PrjImg: WebMasters,
+        PrjTechs: ['Css', 'Scss', 'Responsive', 'React', 'Jsx', 'Atomic Methodology', 'Material UI', 'Material UI Icons', 'React Slick', 'Github', 'Vercel'],
+        PrjPreview: "https://web-masters-app.vercel.app/",
+        PrjGithub: "https://github.com/AhmedZkaria22/Web-Masters-App"
+    },
+    {
+        PrjTitle: "Next Agency App",
+        PrjImg: NextAgency,
+        PrjTechs: ['Css', 'Scss', 'Responsive', 'React', 'Jsx', 'React Slick', 'React Bootstrap', 'React Icons', 'Animation', 'Framer Motion', 'TypeScript', 'NextJs', 'Github', 'Vercel'],
+        PrjPreview: "https://next-agency-app.vercel.app/",
+        PrjGithub: "https://github.com/AhmedZkaria22/Next-Agency-App"
+    },
+    {
+        PrjTitle: "Next Portfolio Card App",
+        PrjImg: NextPortfolioCard,
+        PrjTechs: ['Css', 'Scss', 'Responsive', 'React', 'Jsx', 'React Slick', 'React Bootstrap', 'React Icons', 'Animation', 'Framer Motion', 'TypeScript', 'NextJs', 'Github', 'Vercel'],
+        PrjPreview: "https://next-portfolio-card-app.vercel.app/",
+        PrjGithub: "https://github.com/AhmedZkaria22/Next-Portfolio-App"
+    },
+    {
+        PrjTitle: "Next Images Gallery App",
+        PrjImg: NextImagesGallery,
+        PrjTechs: ['Css', 'Css Modules', 'Responsive', 'React', 'React V18', 'Redux', 'Redux-Thunk', 'Jsx',  'Material UI', 'Material UI Icons', 'Api', 'Unsplash API', "@redux-devtools", "js-cookie", 'NextJs', 'Github', 'Vercel'],
+        PrjPreview: "https://next-images-gallery.vercel.app/",
+        PrjGithub: "https://github.com/AhmedZkaria22/Next-Images-Gallery"
+    },
+    {
+        PrjTitle: "Next Abdo Store Dashboard",
+        PrjImg: NextAbdoStoreDashboard,
+        PrjTechs: ['Tailwind Css', 'Responsive', 'React', 'React Bootstrap', 'React Bootstrap Icons', 'Jsx', 'Validation',  'React Circular Progressbar', "Ag Grid React", "Recharts", "Dayjs", "Firebase", 'NextJs', 'Github', 'Vercel'],
+        PrjPreview: "https://abdo-store-dashboard.vercel.app/",
+        PrjGithub: "https://github.com/AhmedZkaria22/Next-Abdo-Store-Dashboard"
+    },
+    {
+        PrjTitle: "Vue.js Todo App - Local Server",
+        PrjImg: VueTodoApp,        
+        PrjTechs: ['Vue', 'Scss', 'JSON', 'JSON server', 'Axios', 'Github'],
+        PrjPreview: "https://www.veed.io/view/e1b81ad9-cff6-483d-bbce-0c9625f3acbd?panel=share",
+        PrjGithub: "https://github.com/AhmedZkaria22/Vue.js-Todo-App"
+    },
+    {
+        PrjTitle: "Vue.js AZ Technical Dashboard",
+        PrjImg: VueAZTechDashboard,        
+        PrjTechs: ['Vue', 'Tailwind Css', 'Responsive', 'Validation', 'Firebase', 'GitHub Copilot Chat'],
+        PrjPreview: "https://drive.google.com/file/d/1z07c7Xk8Olp0Gmj7EF3RXvNEmgL0ohoP/view?usp=sharing",
+        PrjGithub: "https://github.com/AhmedZkaria18/AZ-Technical-Dashboard-Vue"
+    },
 ];
 
 
 export const LatestProjects = [
     {
-        PrjTitle: "Pyramid Glass Clone",
-        PrjImg: PPyramid,
-        PrjTechs: ['Html', 'Css', 'Scss', 'Bootstrap', 'Responsive', 'Js', 'jQuery', 'Validation'],
-        PrjPreview: "https://ahmedzkaria22.github.io/Pyramid-Glass/Glassware.html",
-        PrjGithub: "https://github.com/AhmedZkaria22/Pyramid-Glass"
+        PrjTitle: "Vue.js AZ Technical Dashboard",
+        PrjImg: VueAZTechDashboard,        
+        PrjTechs: ['Vue', 'Tailwind Css', 'Responsive', 'Validation', 'Firebase', 'GitHub Copilot Chat'],
+        PrjPreview: "https://drive.google.com/file/d/1z07c7Xk8Olp0Gmj7EF3RXvNEmgL0ohoP/view?usp=sharing",
+        PrjGithub: "https://github.com/AhmedZkaria18/AZ-Technical-Dashboard-Vue"
+    },
+    {
+        PrjTitle: "Vue.js Todo App - Local Server",
+        PrjImg: VueTodoApp,        
+        PrjTechs: ['Vue', 'Scss', 'JSON', 'JSON server', 'Axios', 'Github'],
+        PrjPreview: "https://www.veed.io/view/e1b81ad9-cff6-483d-bbce-0c9625f3acbd?panel=share",
+        PrjGithub: "https://github.com/AhmedZkaria22/Vue.js-Todo-App"
+    },
+    {
+        PrjTitle: "Next Abdo Store Dashboard",
+        PrjImg: NextAbdoStoreDashboard,
+        PrjTechs: ['Tailwind Css', 'Responsive', 'React', 'React Bootstrap', 'React Bootstrap Icons', 'Jsx', 'Validation',  'React Circular Progressbar', "Ag Grid React", "Recharts", "Dayjs", "Firebase", 'NextJs', 'Github', 'Vercel'],
+        PrjPreview: "https://abdo-store-dashboard.vercel.app/",
+        PrjGithub: "https://github.com/AhmedZkaria22/Next-Abdo-Store-Dashboard"
     },
     {
         PrjTitle: "Abdo Store",
@@ -248,23 +329,16 @@ export const LatestProjects = [
         PrjGithub: "https://github.com/AhmedZkaria22/React-Chat"
     },
     {
-      PrjTitle: "Netflix Clone",
-      PrjImg: PNetflix,
-      PrjTechs: ['Css', 'Scss', 'Js', 'React', 'Route', 'Redux', 'Redux-Thunk', 'Jsx', 'Api'],
-      PrjPreview: "https://ahmedzkaria22.github.io/React-Netflix-Clone/#/ReactNetflixHome",
-      PrjGithub: "https://github.com/AhmedZkaria22/React-Netflix-Clone"
+        PrjTitle: "AZ Todos",
+        PrjImg: PRTodo,
+        PrjTechs: ['Css', 'Scss', 'Responsive', 'React', 'Jsx', 'Route', 'Redux', 'TypeScript', 'Firebase', 'Redux-Firebase', 'Validation', 'Versioning'],
+        PrjPreview: "https://todoapp-22e95-v1.web.app/",
     },
-    {
-      PrjTitle: "Arab Academy Landing Version2",
-      PrjImg: PRAAST2,
-      PrjTechs: ['Css', 'Scss', 'Responsive', 'Scalable', 'Bootstrap', 'Js', 'React', 'Jsx', 'Validation', 'Animation'],
-      PrjPreview: "https://ahmedzkaria22.github.io/AAST-Task-V2/",
-      PrjGithub: "https://github.com/AhmedZkaria22/AAST-Task-V2"
-    },
-    {
-        PrjTitle: "Tadarab Task",
-        PrjImg: PRTadarab,
-        PrjTechs: ['Css', 'Scss', 'Responsive', 'React', 'Jsx', 'Matrial ui', 'Matrial ui icons', 'TypeScript', 'NextJs SSR', 'React Slick'],
-        PrjPreview: "https://tadarab-task.vercel.app/",
-    }
+    // {
+    //     PrjTitle: "Next Agency App",
+    //     PrjImg: NextAgency,
+    //     PrjTechs: ['Css', 'Scss', 'Responsive', 'React', 'Jsx', 'React Slick', 'React Bootstrap', 'React Icons', 'Framer Motion', 'TypeScript', 'NextJs', 'Github', 'Vercel'],
+    //     PrjPreview: "https://next-agency-app.vercel.app/",
+    //     PrjGithub: "https://github.com/AhmedZkaria22/Next-Agency-App"
+    // },
 ];

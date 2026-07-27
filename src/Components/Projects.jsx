@@ -10,10 +10,15 @@ import { FiGithub, FiMonitor } from 'react-icons/fi';
 import { BsGear } from 'react-icons/bs';
 import { Form } from 'react-bootstrap';
 import { handelProjectsDelay, handelProjectsDelayReset } from './AnimationsFuns';
+import { SlMouse } from "react-icons/sl";
 
 function Projects() {
-    const projectsFilter = ['All', 'Bootstrap', 'Responsive', 'jQuery', 'React', 'Validation', 'Api', 'Firebase', 'Animation', 'Wordpress'];
+    // Wordpress projects disabled untill connect with new host
+    // const projectsFilter = ['All', 'Bootstrap', 'Responsive', 'jQuery', 'React', 'Validation', 'Animation', 'Api', 'Firebase', 'NextJs', 'Wordpress'];
+    // const projectsFilter = ['All', 'Bootstrap', 'Responsive', 'jQuery', 'React', 'Validation', 'Animation', 'Api', 'Firebase', 'NextJs'];
+    const projectsFilter = ['All', 'Bootstrap', 'Responsive', 'jQuery', 'React', 'Validation', 'Animation', 'Versioning', 'Api', 'Firebase', 'NextJs', 'Vue'];
     const [projSt, setProjSt] = useState(projectsData);
+    // console.log('projectsData' , projectsData.length)
 
 
     if( window !== 'undefined'){ window.scrollTo(0,0); }
@@ -29,7 +34,9 @@ function Projects() {
         const smmenu = document.querySelector('.smprojs_menu');
         smmenu.style.display = 'none';
       }
+      // document.querySelector('#scroll_down').style.display = 'flex';
     }
+
 
     const handelMenuItem = (e, String, wrapcls) => {
       const btnVal = String;      
@@ -41,8 +48,17 @@ function Projects() {
       }
       if( btnVal !== 'All' ){
         setProjSt( projectsData.filter( (item) => item.PrjTechs.indexOf(btnVal) !== -1 ) );
+        // setProjSt( projectsData.filter( (item) => item.PrjTechs.filter( (nestedItem) => nestedItem.indexOf(btnVal) !== -1 ) ) );
+        // setProjSt( projectsData.filter( (item) =>{
+          // return item.PrjTechs.indexOf(btnVal) !== -1 || 
+          // item.PrjTechs.filter( (nestedItem) => nestedItem.indexOf(btnVal) !== -1 ) 
+        // }
+        // )
+        // ) 
         handelProjectsDelayReset();
-      }else{ setProjSt( projectsData );   handelProjectsDelayReset(); }      
+      }else{ setProjSt( projectsData );   handelProjectsDelayReset(); }   
+      
+      document.querySelectorAll(".projects__wrapper__item__imgWrapper__langs").forEach(item => item.setAttribute("style", "opacity: 0;"))
     }  
 
     if( typeof window !== 'undefined' ){
@@ -82,7 +98,8 @@ function Projects() {
           <div className='projects_icons'>
             <p> <FiMonitor /> Preview Link </p>
             <p> <BiCodeCurly />  Show Technologes </p>
-            <p> <FiGithub /> Github Repo Link</p>
+            {/* Github disabled because account closed, untill make new by upload projects */}
+            {/* <p> <FiGithub /> Github Repo Link</p> */}
             <BsGear className='smprojs_menu-ic' onClick={handelSmMenu}/>
           </div>
 
@@ -94,6 +111,11 @@ function Projects() {
             ) 
           } )
           }</div>
+
+          <div id="scroll_down">
+            <SlMouse />
+            Scroll Down
+          </div>
 
           <div className='smprojs_menu'>
             <div className={'smprojs_menu_wrapper'}>

@@ -5,6 +5,7 @@ import { Figure, NavLink } from 'react-bootstrap';
 import {BiCodeCurly} from 'react-icons/bi';
 import {FiGithub, FiMonitor} from 'react-icons/fi';
 function Project(props) {
+    const {preload} = props;
     const trgRef = useRef(null);
     const handelTechs = () => {
         // ( trgRef.current.style.display === 'none' ) 
@@ -14,7 +15,6 @@ function Project(props) {
         ? trgRef.current.style.opacity = 1
         : trgRef.current.style.opacity = 0
     }
-    const {preload} = props;
 
         return(
         <Figure className={`projects__wrapper__item ${preload[2].toString().replace(/,/g, " ")}`}>
@@ -32,10 +32,11 @@ function Project(props) {
             <div className={'projects__wrapper__item__controlls'}>
                 <NavLink href={preload[3]}  target='_blank'> <FiMonitor /> </NavLink>
                 <BiCodeCurly onClick={handelTechs}/>
-                {
+                {/* Github disabled because account closed, untill make new by upload projects */}
+                {/* {
                     (preload[4]) && 
                         <NavLink href={preload[4]}  target='_blank'> <FiGithub /> </NavLink>                    
-                }
+                } */}
             </div>
         </Figure>    
     )

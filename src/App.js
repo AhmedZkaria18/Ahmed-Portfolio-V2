@@ -37,7 +37,12 @@ function App0() {
         </footer>
       </div>
       <FaChevronUp  id='btnTop' onClick={() => {
-        window.scrollTo(0,0);
+        // window.scrollTo(0,0);
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: 'smooth'
+        });
       }} />
     </Router>
   );

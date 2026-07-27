@@ -25,6 +25,8 @@ export const filterFun = () => {
 
 let filterArr = [];
 export const handelProjectsFilter = (e) => {
+  document.querySelector('#scroll_down').style.display = 'flex';
+
     if (e.target.checked) {        
       if(filterArr.indexOf(e.target.nextSibling.textContent) === -1){ filterArr.push(e.target.nextSibling.textContent); }
     } 
@@ -45,22 +47,23 @@ export const handelProjectsFilter = (e) => {
 
 
     if(filterArr.length >= 1){
-      console.log(filterArr, document.querySelectorAll(`.projects__wrapper__item.${filterArr.join(".")}`));
+      // console.log(filterArr, document.querySelectorAll(`.projects__wrapper__item.${filterArr.join(".")}`));
       const allProjects = document.querySelectorAll(`.projects__wrapper__item`);
       for( let i=0; i<allProjects.length; i++ ){
         allProjects[i].style.display = 'none';
       }
       const allProjectsTargeted = document.querySelectorAll(`.projects__wrapper__item.${filterArr.join(".")}`);
+      // console.log('heellllooooooo', allProjectsTargeted)
       for( let i=0; i<allProjectsTargeted.length; i++ ){
         allProjectsTargeted[i].style.display = 'block';
       }
     }else{ 
-      console.log(filterArr, document.querySelectorAll(`.projects__wrapper__item`)); 
+      // console.log(filterArr, document.querySelectorAll(`.projects__wrapper__item`)); 
       const allProjects = document.querySelectorAll(`.projects__wrapper__item`);
       for( let i=0; i<allProjects.length; i++ ){
         allProjects[i].style.display = 'block';
       }
-    }          
+    }
 }
 
 
@@ -69,28 +72,26 @@ export  const colorMoodFun = (e) => {
         document.querySelector('.header__colorMoodWrapper__moon').style.display = "block";
         document.querySelector('.header__colorMoodWrapper__sun').style.display = "none";
 
-        document.documentElement.style.setProperty("--backwallperColor", "#051e34");
-        document.documentElement.style.setProperty("--backmenuColor", "#f6f7f9");
-        document.documentElement.style.setProperty("--lightColor", "#051e34");
-        document.documentElement.style.setProperty("--textColor", "#f6f7f9");
-        document.documentElement.style.setProperty("--projectBrdColor", "#f6f7f9a8");   
-        document.documentElement.style.setProperty("--projectItemBack", "#051e34cf");
-        document.documentElement.style.setProperty("--formBtnBack", "rgb(246 247 249 / 60%)");
-        document.documentElement.style.setProperty("--pensShadow", "rgb(70 74 77) 0px 1px 2px 0px, rgb(70 74 77) 0px 1px 3px 1px");         
+        document.documentElement.style.setProperty("--backwallperColor", "#181a20");
+        document.documentElement.style.setProperty("--backmenuColor", "#f6f5fbfd");
+        document.documentElement.style.setProperty("--lightColor", "#181a20");
+        document.documentElement.style.setProperty("--textColor", "#f6f5fb");
+        document.documentElement.style.setProperty("--projectItemBack", "#181a20cf");
+        document.documentElement.style.setProperty("--formBtnBack", "#f6f5fb99");
+        document.documentElement.style.setProperty("--pensShadow", "#5468ffb3 0px 1px 2px 0px, #5468ffd9 0px 1px 3px 1px");         
         document.documentElement.style.setProperty("--footerPolygon", "polygon(100% 0%, 0% 100%, 100% 100%)");        
     }
     else{
         document.querySelector('.header__colorMoodWrapper__sun').style.display = "block";
         document.querySelector('.header__colorMoodWrapper__moon').style.display = "none";
 
-        document.documentElement.style.setProperty("--backwallperColor", "#f6f7f9");
-        document.documentElement.style.setProperty("--backmenuColor", "#333");
-        document.documentElement.style.setProperty("--lightColor", "#f6f7f9");
-        document.documentElement.style.setProperty("--textColor", "#051e34");
-        document.documentElement.style.setProperty("--projectBrdColor", "#545b6261");
-        document.documentElement.style.setProperty("--projectItemBack", "#f6f7f9cf");
-        document.documentElement.style.setProperty("--formBtnBack", "rgb(5 30 52 / 60%)");
-        document.documentElement.style.setProperty("--pensShadow", "rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 1px 3px 1px");   
+        document.documentElement.style.setProperty("--backwallperColor", "#f6f5fb");
+        document.documentElement.style.setProperty("--backmenuColor", "#181a20fd");
+        document.documentElement.style.setProperty("--lightColor", "#f6f5fb");
+        document.documentElement.style.setProperty("--textColor", "#181a20");
+        document.documentElement.style.setProperty("--projectItemBack", "#f6f5fbcf");
+        document.documentElement.style.setProperty("--formBtnBack", "#181a2099");
+        document.documentElement.style.setProperty("--pensShadow", "#5468ff4d 0px 1px 2px 0px, #5468ff26 0px 1px 3px 1px");   
         document.documentElement.style.setProperty("--footerPolygon", "polygon(0% 0%, 0% 100%, 100% 100%)");
     }
 }

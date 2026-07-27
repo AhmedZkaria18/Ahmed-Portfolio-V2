@@ -9,7 +9,7 @@ function WriteTestimonial() {
 
         emailjs.sendForm('service_1zrrxxs', 'template_cbmjh3t', e.target, 'user_Eg6uYSShr8fVeYSPqDVsr')
         .then( result => {
-            console.log(result);
+            // console.log(result);
         }).catch(error => {
             console.log(error.text);
         });
