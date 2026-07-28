@@ -3,7 +3,7 @@ import { Figure, NavLink } from 'react-bootstrap';
 // import {FaDesktop} from 'react-icons/fa';
 // import {AiOutlineEye} from 'react-icons/ai';
 import {BiCodeCurly} from 'react-icons/bi';
-import {FiGithub, FiMonitor} from 'react-icons/fi';
+import {FiMonitor} from 'react-icons/fi';
 function Project(props) {
     const {preload} = props;
     const trgRef = useRef(null);
@@ -11,7 +11,7 @@ function Project(props) {
         // ( trgRef.current.style.display === 'none' ) 
         // ? trgRef.current.style.display = 'block'
         // : trgRef.current.style.display = 'none'
-        ( trgRef.current.style.opacity == 0 ) 
+        ( trgRef.current.style.opacity === '0' )
         ? trgRef.current.style.opacity = 1
         : trgRef.current.style.opacity = 0
     }

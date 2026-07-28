@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Container, Row, Col, Button, Carousel, Form } from 'react-bootstrap';
+import { Container, Row, Col, Button, Carousel } from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link'
 import IHtml from '../Assets/images/certificates/CHtml.jpg';
 import ICss from '../Assets/images/certificates/CCss.jpg';
@@ -21,20 +21,20 @@ import pen5 from '../Assets/images/codepen5.png';
 import pen6 from '../Assets/images/codepen6.png';
 
 
-import { LatestProjects, projectsData } from './ProjectsData';
+import { LatestProjects } from './ProjectsData';
 import { menuFun, colorMoodFun } from '../Plugin';
 import Skill from './Skill';
 import Project from './Project';
 import Pen from './Pen';
 import WriteTestimonial from './WriteTestimonial';
 
-import { FaTrafficLight, FaLinkedinIn, FaGithub, FaCodepen, FaVuejs, FaJira, FaSlack } from 'react-icons/fa';
+import { FaTrafficLight, FaLinkedinIn, FaCodepen, FaVuejs, FaJira, FaSlack } from 'react-icons/fa';
 import { BsDatabaseGear, BsInputCursorText, BsSearch } from 'react-icons/bs';
-import { SiHtml5, SiCss3, SiJavascript, SiJquery, SiSass, SiBootstrap, SiReact, SiWordpress, SiJava, SiMicrosoftsqlserver, SiMysql, SiFigma, SiGmail, SiFirebase, SiRedux, SiTypescript, SiMaterialui, SiMui, SiI18Next, SiApollographql, SiBitbucket, SiNextdotjs, SiAdobexd, SiAdobephotoshop, SiPostman, SiTailwindcss, SiTrello, SiRoundcube, SiSwagger, SiNotion } from 'react-icons/si';
+import { SiHtml5, SiCss3, SiJavascript, SiJquery, SiSass, SiBootstrap, SiReact, SiWordpress, SiMicrosoftsqlserver, SiFigma, SiFirebase, SiRedux, SiTypescript, SiMui, SiI18Next, SiApollographql, SiBitbucket, SiNextdotjs, SiAdobexd, SiAdobephotoshop, SiPostman, SiTailwindcss, SiTrello, SiRoundcube, SiSwagger, SiNotion } from 'react-icons/si';
 import { FiMenu, FiSun, FiMoon } from 'react-icons/fi';
 import { GoBold } from 'react-icons/go';
 import { GiFamilyTree, GiSkills } from 'react-icons/gi';
-import { VscJson, VscFeedback, VscAzureDevops } from 'react-icons/vsc';
+import { VscFeedback, VscAzureDevops } from 'react-icons/vsc';
 import { DiGit, DiIllustrator, DiJava } from 'react-icons/di';
 import cvFile from '../Assets/AhmedZakariaCV.pdf';
 import { HiDownload } from 'react-icons/hi';
