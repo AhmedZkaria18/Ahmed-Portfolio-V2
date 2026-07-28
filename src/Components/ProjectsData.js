@@ -278,7 +278,7 @@ export const projectsData = [
     {
         PrjTitle: "Vue.js AZ Technical Dashboard",
         PrjImg: VueAZTechDashboard,        
-        PrjTechs: ['Vue', 'Tailwind Css', 'Responsive', 'Validation', 'Firebase', 'GitHub Copilot Chat'],
+        PrjTechs: ['Vue', 'Tailwind Css', 'Responsive', 'Validation', 'Github', 'netlify', 'Copilot Chat'],
         PrjPreview: "https://drive.google.com/file/d/1z07c7Xk8Olp0Gmj7EF3RXvNEmgL0ohoP/view?usp=sharing",
         PrjGithub: "https://github.com/AhmedZkaria18/AZ-Technical-Dashboard-Vue"
     },
@@ -289,7 +289,7 @@ export const LatestProjects = [
     {
         PrjTitle: "Vue.js AZ Technical Dashboard",
         PrjImg: VueAZTechDashboard,        
-        PrjTechs: ['Vue', 'Tailwind Css', 'Responsive', 'Validation', 'Firebase', 'GitHub Copilot Chat'],
+        PrjTechs: ['Vue', 'Tailwind Css', 'Responsive', 'Validation', 'Github', 'netlify', 'Copilot Chat'],
         PrjPreview: "https://drive.google.com/file/d/1z07c7Xk8Olp0Gmj7EF3RXvNEmgL0ohoP/view?usp=sharing",
         PrjGithub: "https://github.com/AhmedZkaria18/AZ-Technical-Dashboard-Vue"
     },

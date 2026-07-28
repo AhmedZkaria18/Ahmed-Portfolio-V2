@@ -130,18 +130,11 @@ function Landing() {
           <Col lg={7} md={7} sm={12}>
               <div className={'hero__description'}>              
                 <h3>Hello, <br/>I am Ahmed Zakaria</h3>
-                {/* <p> Junior Front end developer </p> */}
-                <p> Front end developer </p>
+                <p> Mid Front end developer </p>
                 <div className={'hero__photo__small'}>
                   <img src={Ahmed}  alt='img'/>
                 </div>
                 <p>
-                  {/* Iam a front-end developer,  seeking a job opportunity to increase my experience, skills and passion
-                  , excited to work with team, I have built a lot of projects that have increased my experience
-                  , I am a fast learner and always love to develop myself */}
-                  {/* Iam a junior front end developer seeking a job opportunity to increase my experience, skills and passion
-                  , excited to work and coordinate with team, have two years experience in react.js and built a lot of projects to increase experience 
-                  , I am a fast learner and always love to develop myself. */}
                   Iam a front end developer seeking a job opportunity to increase my experience, skills and passion, 
                   excited to work and coordinate with team, have more three years experience in react.js and knowledge in vue.js 
                   built a lot of components, projects and self projects to increase experience, I am a fast learner and 
@@ -152,7 +145,6 @@ function Landing() {
                 {/* Github disabled because account closed, untill make new by upload projects */}
                 {/* <Button href='https://github.com/AhmedZkaria22' target='_blank'
                 ><FaGithub/></Button> */}
-                {/* <a href={cvFile}  className='btn'  download data-aos='fade-down' data-aos-delay='1000' data-aos-duration='1100'>  Resume  <HiDownload /> </a> */}
                 <a href={cvFile}  className='btn'  download>  Resume  <HiDownload /> </a>
               </div>
             </Col>
@@ -166,73 +158,7 @@ function Landing() {
         </Container>    
   
         <section id="skills">        
-          {/* <h2> SKILLS / </h2> */}
           <h2> <GiSkills /> SKILLS </h2>
-          {/* <div className={'skills__container'}>
-            <Skill SkillIcon={SiHtml5} SkillName='Html / Html5'/>
-            <Skill SkillIcon={SiCss3} SkillName='Css / Css3'/>
-            <Skill SkillIcon={SiJavascript} SkillName='Js : basic, dom, bom, oop'/>
-            <Skill SkillIcon={SiJquery} SkillName='jQuery'/>
-            <Skill SkillIcon={SiSass} SkillName='Sass / Scss'/>
-            <Skill SkillIcon={SiBootstrap} SkillName='Bootstrap'/>
-            <Skill SkillIcon={SiJavascript} SkillName='Ecma'/>
-            <Skill SkillIcon={SiReact} SkillName={`React & Redux & Route`}/>
-            <Skill SkillIcon={SiReact} SkillIcon2={GoBold} SkillName={`React Bootstrap`}/>
-            <Skill SkillIcon={SiMui} SkillName='Matrial UI'/>
-            <Skill SkillIcon={SiTailwindcss} SkillName='Tailwind Css'/>
-            <Skill SkillIcon={SiRedux} SkillName='ٌRedux Thunk'/>
-            <Skill SkillIcon={SiRedux} SkillIcon2={SiFirebase} SkillName='Redux Firebase'/>
-            <Skill SkillIcon={BsInputCursorText} SkillName='Formik'/>
-            <Skill SkillIcon={SiI18Next} SkillName='React-i18next'/>
-            <Skill SkillIcon={SiTypescript} SkillName='ٌTypescript'/>
-            <Skill SkillIcon={SiNextdotjs} SkillName='Next.js'/>
-            <Skill SkillIcon={GrGraphQl} SkillName='GraphQl'/>
-            <Skill SkillIcon={SiApollographql} SkillName='Apollo Client'/>
-            <Skill SkillIcon={DiGit} SkillName='Git / Github'/>
-            <Skill SkillIcon={SiBitbucket} SkillName='Bitbucket'/>
-
-
-          </div> */}
-  
-          {/* <h2>  Knowlage </h2>
-          <div className={'skills__container'}>
-            <Skill SkillIcon={DiGit} SkillName='Git / Github'/>
-            <Skill SkillIcon={VscJson} SkillName='Api'/>
-            <Skill SkillIcon={SiFirebase} SkillName='FireBase'/>
-            <Skill SkillIcon={FaTrafficLight} SkillName='Ui Ux'/>          
-            <Skill SkillIcon={BsSearch} SkillName='Seo'/>          
-          </div>
-  
-          <h2>  Fundimental </h2>
-          <div className={'skills__container'}>
-            <Skill SkillIcon={GiFamilyTree} SkillName={`Data Structure & Algorithm`}/>
-            <Skill SkillIcon={SiJava} SkillName='Java'/>
-            <Skill SkillIcon={SiMicrosoftsqlserver} SkillName='Sql'/>
-            <Skill SkillIcon={SiMysql} SkillName='MySQL'/>
-          </div> */}
-          {/* <h2>  Fundimental </h2>
-          <div className={'skills__container'}>            
-            <Skill SkillIcon={SiFirebase} SkillName='FireBase'/>
-            <Skill SkillIcon={VscJson} SkillName='Api'/>            
-            <Skill SkillIcon={FaTrafficLight} SkillName='Ui Ux'/>          
-            <Skill SkillIcon={BsSearch} SkillName='Seo'/>      
-            <Skill SkillIcon={SiWordpress} SkillName='Wordpress'/>
-            <Skill SkillIcon={DiJava} SkillName='Java'/>
-            <Skill SkillIcon={SiMicrosoftsqlserver} SkillName='Sql'/>
-            <Skill SkillIcon={SiMysql} SkillName='MySQL'/>
-            <Skill SkillIcon={GiFamilyTree} SkillName={`Data Structure & Algorithm`}/>
-          </div> */}
-  
-          {/* <h2>  FAMILIAR </h2>
-          <div className={'skills__container'}>
-            <Skill SkillIcon={SiFigma} SkillName='Figma'/>
-            <Skill SkillIcon={SiAdobephotoshop} SkillName='Photoshop'/>
-            <Skill SkillIcon={SiAdobexd} SkillName='XD'/>
-            <Skill SkillIcon={SiPostman} SkillName='Postman'/>
-          </div>         */}
-
-
-          {/* frontend dev */}
           <div className={'skills__container'}>
             <Skill SkillIcon={SiHtml5} SkillName='Html / Html5'/>
             <Skill SkillIcon={SiCss3} SkillName='Css / Css3'/>
