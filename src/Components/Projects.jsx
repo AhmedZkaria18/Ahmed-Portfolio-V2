@@ -6,7 +6,7 @@ import { IoIosArrowRoundBack, IoIosClose } from 'react-icons/io';
 import { colorMoodFun, handelProjectsFilter } from '../Plugin';
 import { FiSun, FiMoon } from 'react-icons/fi';
 import { BiCodeCurly } from 'react-icons/bi';
-import { FiGithub, FiMonitor } from 'react-icons/fi';
+import { FiMonitor } from 'react-icons/fi';
 import { BsGear } from 'react-icons/bs';
 import { Form } from 'react-bootstrap';
 import { handelProjectsDelay, handelProjectsDelayReset } from './AnimationsFuns';

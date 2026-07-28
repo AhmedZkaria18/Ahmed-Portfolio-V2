@@ -1,5 +1,5 @@
 export const handelHeadDelay = (sectionName) => {
-    if( typeof sectionName !== 'null' &&  typeof window !== 'undefined' ){
+    if( sectionName !== null &&  typeof window !== 'undefined' ){
       const trgHd = sectionName.firstChild;
     //   console.log(sectionName);
     // if( window.scrollY >= (sectionName.offsetTop - 200) ){ 
@@ -13,7 +13,7 @@ export const handelHeadDelay = (sectionName) => {
 }
 
 export const handelHeroDelay = (sectionName) => {
-if( typeof sectionName !== 'null' &&  typeof window !== 'undefined' ){
+if( sectionName !== null &&  typeof window !== 'undefined' ){
     const trgDesc = document.querySelector('#hero .hero__description');
     const trgLink1 = document.querySelectorAll('#hero .hero__description a')[0];
     const trgLink2 = document.querySelectorAll('#hero .hero__description a')[1];
