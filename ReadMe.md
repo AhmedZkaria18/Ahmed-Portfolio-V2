@@ -19,7 +19,6 @@
  * Every Project has 3 icons else Wordpress projects has 2 :
    * screen icon to preview project in new tab
    * brackets icon to show project languages ( toggle icon )
-   * github icon is link to project in github
  * Can send your feedback / vision on my portfolio          
 
   #### Find me :
